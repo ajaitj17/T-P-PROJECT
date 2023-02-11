@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Post your Question</h1>
+<form [formGroup] = "productForm">
+<mat-form-field appearance="outline">
+    <mat-label>Thoughts</mat-label>
+    <input formControlName="thoughts" matInput placeholder="Your's Thought">
+  </mat-form-field>
+</form>
+
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addQuestion()">{{actionBtn}}</button>
+</div>
